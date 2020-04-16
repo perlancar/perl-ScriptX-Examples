@@ -1,0 +1,20 @@
+#!perl
+
+use strict;
+#use warnings;
+
+use ScriptX;
+ScriptX->run;
+
+# PODNAME:
+# ABSTRACT: Do nothing
+
+=head1 DESCRIPTION
+
+Without any plugins, a L<ScriptX>-based does not do anything.
+
+C<< ScriptX->run >> executes all event handlers that registers for the C<run>
+event, for which by default there are none.
+
+This script does not parse command-line options, read input, or output anything.
+It does not event explicitly exit with a certain exit code.

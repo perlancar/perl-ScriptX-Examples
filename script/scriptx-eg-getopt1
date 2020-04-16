@@ -1,0 +1,22 @@
+#!perl
+
+use strict;
+#use warnings;
+
+use vars '%opts';
+use ScriptX
+    'Getopt::Long' => { spec => ['name=s' => sub { $opts{name} = $_[1] }] },
+    'Run' => {
+        code => sub {
+            my ($self, $stash) = @_;
+            print "Hello, ", (defined $opts{name} ? $opts{name} : "noname"), "\n";
+        }
+    },
+    ;
+
+ScriptX->run;
+
+# PODNAME:
+# ABSTRACT: Get options using Getopt::Long
+
+=head1 DESCRIPTION
