@@ -6,8 +6,13 @@ package ScriptX::Examples;
 # VERSION
 
 1;
-# ABSTRACT: Example ScriptX-based scripts
+# ABSTRACT: More examples of ScriptX-based scripts
 
 =for Pod::Coverage ^(.+)$
 
 =head1 DESCRIPTION
+
+
+=head1 SEE ALSO
+
+The L<ScriptX> distribution already includes some examples.
